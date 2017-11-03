@@ -1,10 +1,13 @@
-let app = require('express')();
+const appPath = './Application';
 
-//init routes
-app.get('/', function(request, response) {
+let express = require('express'),
+    app     = express(),
+    config  = require(appPath + '/Config.js'),
+    router  = require(appPath + '/Router.js');
 
-});
+app.use(router);
 
-app.listen(80, function() {
-    console.log('Codex started.');
+app.listen(config.app().port, function() {
+    if (config.app().debug)
+        console.log('Codex started.');
 });

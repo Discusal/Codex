@@ -4,7 +4,8 @@
   "description": "Ebook reader platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "dependencies": {
     "eslint": "^4.10.0",
     "express": "^4.16.2",
+    "fs": "0.0.1-security",
     "mustache": "^2.3.0",
     "mysql": "^2.15.0"
   }

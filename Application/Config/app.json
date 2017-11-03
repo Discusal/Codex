@@ -1,0 +1,6 @@
+{
+    "name": "Codex",
+    "host": "",
+    "port": 31500,
+    "debug": false
+}
